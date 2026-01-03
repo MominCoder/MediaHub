@@ -17,6 +17,11 @@ replace all code of App.jsx inside return with Simple div with Hello string and 
 npm install -D tailwindcss @tailwindcss/vite
 Configure the Vite plugin vite.config.ts -> add this line- import tailwindcss from '@tailwindcss/vite' -> add tailwindcss() within plugins. For reference- https://tailwindcss.com/docs/installation/using-vite
 Add this line in your index.css file- @import "tailwindcss";
-
 Add this line in head tag of index.html file- <link href="/src/index.css" rel="stylesheet">
 
+## Project
+Add favicon
+Upload SVGs to /public/assets/images/
+Create Header component
+Create SideBar
+Create SideMenu and build toggle effect on hamburger click using rtk

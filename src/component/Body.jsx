@@ -1,14 +1,18 @@
-import React from 'react'
-import SideBar from './SideBar'
-import MainContainer from './MainContainer'
+import SideBar from "./SideBar";
+import MainContainer from "./MainContainer";
+import { useSelector } from "react-redux";
+import SideMenu from "./SideMenu";
 
 const Body = () => {
-  return (
-    <div className='flex'>
-        <SideBar />
-        <MainContainer />
-    </div>
-  )
-}
+  const isSidebarOpen = useSelector((store) => store.app.isSidebarOpen);
 
-export default Body
+  return (
+    <div className="flex gap-10 select-none">
+      <SideMenu hidden={isSidebarOpen} />
+      <SideBar hidden={!isSidebarOpen} />
+      <MainContainer />
+    </div>
+  );
+};
+
+export default Body;
