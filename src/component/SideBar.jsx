@@ -22,7 +22,7 @@ const SideBar = ({ hidden }) => {
       <div className=" bg-black/60">
         {/* Sidebar */}
         <div
-          className={`bg-white pt-3.75 w-2/3 sm:w-1/4 h-full transform transition-transform duration-300 ease-out ${
+          className={`bg-white pt-4.5 w-2/3 sm:w-1/4 h-full transform transition-transform duration-300 ease-out ${
             hidden ? "-translate-x-full" : "translate-x-0"
           } `}
         >
