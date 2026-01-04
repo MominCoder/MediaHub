@@ -1,6 +1,6 @@
 const SideMenu = ({hidden}) => {
   return (
-    <div className={`px-9 xl:px-5 py-5 ${hidden ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+    <div className={`px-9 xl:px-5 py-5 ${hidden ? 'opacity-0 pointer-events-none' : 'opacity-100'} hidden sm:block`}>
       <ul className="flex flex-col gap-8">
         <li className="flex flex-col gap-1 items-center">
           <figure className="">
