@@ -26,7 +26,7 @@ const SideBar = ({ hidden }) => {
             hidden ? "-translate-x-full" : "translate-x-0"
           } `}
         >
-          <div className="px-10 xl:px-5">
+          <div className="px-2.5 sm:px-10 xl:px-5">
             <div className="flex gap-2 sm:gap-4 lg:gap-7">
               <figure
                 className="cursor-pointer hover:bg-gray-200 p-2.5 -ml-2.5 -mt-2.5 rounded-full"
@@ -35,14 +35,14 @@ const SideBar = ({ hidden }) => {
                 <img
                   src="/public/assets/images/hamburger.svg"
                   alt="Hamburger"
-                  className="w-full max-h-6"
+                  className="w-full max-h-4 sm:max-h-6"
                 />
               </figure>
               <figure className="cursor-pointer">
                 <img
                   src="/public/assets/images/YouTube-Logo.svg"
                   alt="Logo"
-                  className="w-full max-h-6"
+                  className="w-full max-h-4 sm:max-h-6"
                 />
               </figure>
             </div>
@@ -55,22 +55,22 @@ const SideBar = ({ hidden }) => {
   [&::-webkit-scrollbar-thumb]:rounded-full
   [&::-webkit-scrollbar-thumb]:bg-gray-400"
           >
-            <div className="px-10 xl:px-5 py-5 border-b border-opacity-10">
+            <div className="px-2.5 sm:px-10 xl:px-5 py-5 border-b border-opacity-10">
               <ul className="flex flex-col gap-4">
-                <li className="flex gap-6">
+                <li className="flex gap-6 items-center">
                   <figure>
                     <img
-                      className="max-h-6"
+                      className="max-h-4 sm:max-h-6"
                       src="/public/assets/images/home.svg"
                       alt="Home"
                     />
                   </figure>
                   <span className="">Home</span>
                 </li>
-                <li className="flex gap-6">
+                <li className="flex gap-6 items-center">
                   <figure>
                     <img
-                      className="max-h-6"
+                      className="max-h-4 sm:max-h-6"
                       src="/public/assets/images/reels.svg"
                       alt="Shorts"
                     />
@@ -80,33 +80,33 @@ const SideBar = ({ hidden }) => {
               </ul>
             </div>
 
-            <div className="px-10 xl:px-5 py-5 border-b border-opacity-10">
+            <div className="px-2.5 sm:px-10 xl:px-5 py-5 border-b border-opacity-10">
               <h2 className="text-lg font-medium mb-4">You {">"}</h2>
               <ul className="flex flex-col gap-4">
-                <li className="flex gap-6">
+                <li className="flex gap-6 items-center">
                   <figure>
                     <img
-                      className="max-h-6"
+                      className="max-h-4 sm:max-h-6"
                       src="/public/assets/images/history.svg"
                       alt="history"
                     />
                   </figure>
                   <span>History</span>
                 </li>
-                <li className="flex gap-6">
+                <li className="flex gap-6 items-center">
                   <figure>
                     <img
-                      className="max-h-6"
+                      className="max-h-4 sm:max-h-6"
                       src="/public/assets/images/download.svg"
                       alt="Downloads"
                     />
                   </figure>
                   <span>Downloads</span>
                 </li>
-                <li className="flex gap-6">
+                <li className="flex gap-6 items-center">
                   <figure>
                     <img
-                      className="max-h-6"
+                      className="max-h-4 sm:max-h-6"
                       src="/public/assets/images/like.svg"
                       alt="like"
                     />
@@ -116,53 +116,53 @@ const SideBar = ({ hidden }) => {
               </ul>
             </div>
 
-            <div className="px-10 xl:px-5 py-5 border-b border-opacity-10">
+            <div className="px-2.5 sm:px-10 xl:px-5 py-5 border-b border-opacity-10">
               <h2 className="text-lg font-medium mb-4">Explore {">"}</h2>
               <ul className="flex flex-col gap-4">
-                <li className="flex gap-6">
+                <li className="flex gap-6 items-center">
                   <figure>
                     <img
-                      className="max-h-6"
+                      className="max-h-4 sm:max-h-6"
                       src="/public/assets/images/shopping.svg"
                       alt="Shopping"
                     />
                   </figure>
                   <span>Shopping</span>
                 </li>
-                <li className="flex gap-6">
+                <li className="flex gap-6 items-center">
                   <figure>
                     <img
-                      className="max-h-6"
+                      className="max-h-4 sm:max-h-6"
                       src="/public/assets/images/music.svg"
                       alt="Music"
                     />
                   </figure>
                   <span>Music</span>
                 </li>
-                <li className="flex gap-6">
+                <li className="flex gap-6 items-center">
                   <figure>
                     <img
-                      className="max-h-6"
+                      className="max-h-4 sm:max-h-6"
                       src="/public/assets/images/news.svg"
                       alt="news"
                     />
                   </figure>
                   <span>News</span>
                 </li>
-                <li className="flex gap-6">
+                <li className="flex gap-6 items-center">
                   <figure>
                     <img
-                      className="max-h-6"
+                      className="max-h-4 sm:max-h-6"
                       src="/public/assets/images/podcast.svg"
                       alt="podcast"
                     />
                   </figure>
                   <span>Podcast</span>
                 </li>
-                <li className="flex gap-6">
+                <li className="flex gap-6 items-center">
                   <figure>
                     <img
-                      className="max-h-6"
+                      className="max-h-4 sm:max-h-6"
                       src="/public/assets/images/gaming.svg"
                       alt="gaming"
                     />
