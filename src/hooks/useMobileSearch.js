@@ -9,7 +9,7 @@ export const useMobileSearch = () => {
     const mq = window.matchMedia(`(max-width: ${MOBILE_MAX}px)`);
     
     const handleChange = () => {
-      if (mq.matches) setIsOpen(false);
+      if (!mq.matches) setIsOpen(false);
     };
 
     mq.addEventListener("change", handleChange);
