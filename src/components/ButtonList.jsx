@@ -3,7 +3,7 @@ import Button from './Button'
 
 const ButtonList = () => {
   return (
-    <div className='flex gap-2'>
+    <div className='px-5 flex gap-2'>
       <Button name={'All'} />
       <Button name={'Shorts'} />
     </div>
