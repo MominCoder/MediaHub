@@ -25,3 +25,14 @@ Upload SVGs to /public/assets/images/
 Create Header component
 Create SideBar
 Create SideMenu and build toggle effect on hamburger click using rtk
+
+Go to https://console.cloud.google.com/apis/credentials and create an YouTube API Key & store it in .env file
+Call youtube videos API to get most popular videos
+Go to Google Cloud Console - https://console.developers.google.com/apis/api/youtube.googleapis.com/overview?project=projectId and enable it
+
+Create VideoContainer
+Create VideoCard
+Create WatchPage
+Create appRouter and configure to render children inside Outlet
+
+
