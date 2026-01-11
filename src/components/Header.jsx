@@ -1,9 +1,10 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { toggleSidebar } from "../utils/appSlice";
 import { useMobileSearch } from "../hooks/useMobileSearch";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { YT_SUGGETIONS_API } from "../utils/constants";
+import { cacheSearchSuggestion } from "../utils/searchSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -18,10 +19,23 @@ const Header = () => {
     const response = await fetch(YT_SUGGETIONS_API + query);
     const data = await response.json();
     setSuggestions(data[1]);
+    dispatch(
+      cacheSearchSuggestion({
+        [query]: data[1],
+      })
+    );
   };
 
+  const findCache = useSelector((store) => store.search);
+
   useEffect(() => {
-    const timer = setTimeout(() => getSearchSuggestions(), 300);
+    const timer = setTimeout(() => {
+      if (findCache[query]) {
+        setSuggestions(findCache[query]);
+      } else {
+        getSearchSuggestions();
+      }
+    }, 300);
 
     return () => {
       clearTimeout(timer);
